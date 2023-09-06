@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1><em>Formulario de inscripción</em></h1>
+        <center>
+            <table width="90%">
+                <form action="views/inscriptionInfo.html" method="GET" id="inscription-form">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="form-docType">Tipo de documento</label>
+                                <br>
+                                <Select id="form-docType" name="form-docType" type="text" required>
+                                    <option disabled selected>Seleccione el tipo de documento</option>
+                                    <option id="CC" value="CC">CC</option>
+                                    <option id="CE" value="CE">CE</option>
+                                    <option id="TI" value="TI">TI</option>
+                                    <option id="PA" value="PA">PA</option>
+                                </Select>
+                            </td>
+                            <td>
+                                <label for="form-docId">Documento de identidad</label>
+                                <br>
+                                <input id="form-docId" name="form-docId" type="number" placeholder="Ingrese su documento de identidad" required>
+                            </td>
+                            <td>
+                                <label for="form-firstName">Nombres</label>
+                                <br>
+                                <input id="form-firstName" type="text" placeholder="Ingrese sus nombres" required>
+                            </td>
+                            <td>
+                                <label for="form-lastName">Apellidos</label>
+                                <br>
+                                <input id="form-lastName" type="text" placeholder="Ingrese sus apellidos" required>
+                            </td>
+                            <td>
+                                <label for="form-militaryPassport">Libreta militar No.</label>
+                                <br>
+                                <input id="form-militaryPassport" type="number" placeholder="Ingrese su número de libreta militar" required>
+                            </td>
+                            <td>
+                                <label for="form-militaryDistrict">Distrito militar</label>
+                                <br>
+                                <input id="form-militaryDistrict" type="text" placeholder="Ingrese su número de libreta militar" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="form-culture">Etnia</label>
+                                <br>
+                                <input id="form-culture" type="text" placeholder="Ingrese su etnia" required>
+                            </td>
+                            <td>
+                                <label for="form-bloodType">Tipo sanguíneo</label>
+                                <br>
+                                <Select id="form-bloodType" type="text" required>
+                                    <option disabled selected>Seleccione el tipo de sangre</option>
+                                    <option id="A+" value="A+">A+</option>
+                                    <option id="A-" value="A-">A-</option>
+                                    <option id="B+" value="B+">B+</option>
+                                    <option id="B-" value="B-">B-</option>
+                                    <option id="AB+" value="AB+">AB+</option>
+                                    <option id="AB-" value="AB-">AB-</option>
+                                    <option id="O+" value="O+">O+</option>
+                                    <option id="O-" value="O-">O-</option>
+                                </Select>
+                            </td>
+                            <td>
+                                <label for="form-maritalStatus">Estado civil</label>
+                                <br>
+                                <Select id="form-maritalStatus" type="text" required>
+                                    <option disabled selected>Seleccione un estado civil</option>
+                                    <option id="soltero(a)" value="soltero(a)">soltero(a)</option>
+                                    <option id="casado(a)" value="casado(a)">casado(a)</option>
+                                </Select>
+                            </td>
+                            <td>
+                                <label for="form-stratum">Estrato social</label>
+                                <br>
+                                <Select id="form-stratum" type="number" required>
+                                    <option disabled selected>Ingrese su estrato social</option>
+                                    <option id="1" value="1">1</option>
+                                    <option id="2" value="2">2</option>
+                                    <option id="3" value="3">3</option>
+                                    <option id="4" value="4">4</option>
+                                    <option id="5" value="5">5</option>
+                                    <option id="6" value="6">6</option>
+                                </Select>
+                            </td>
+                            <td>
+                                <label for="form-gender">Sexo</label>
+                                <br>
+                                <Select id="form-gender" type="text" required>
+                                    <option disabled selected>Seleccione un sexo</option>
+                                    <option id="M" value="M">M</option>
+                                    <option id="F" value="F">F</option>
+                                    <option id="Otro" value="Otro">Otro</option>
+                                </Select>
+                            </td>
+                            <td>
+                                <label for="form-birthdate">Fecha de nacimiento</label>
+                                <br>
+                                <input id="form-birthdate" type="date" placeholder="Ingrese su fecha de nacimiento" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="form-cityBirth">Ciudad de nacimiento</label>
+                                <br>
+                                <input id="form-cityBirth" type="text" placeholder="Ingrese su ciudad de nacimiento" required>
+                            </td>
+                            <td>
+                                <label for="form-country">País</label>
+                                <br>
+                                <input id="form-country" type="text" placeholder="Ingrese su país" required>
+                            </td>
+                            <td>
+                                <label for="form-state">Departamento</label>
+                                <br>
+                                <input id="form-state" type="text" placeholder="Ingrese su departamento" required>
+                            </td>
+                            <td>
+                                <label for="form-city">Ciudad</label>
+                                <br>
+                                <input id="form-city" type="text" placeholder="Ingrese su ciudad" required>
+                            </td>
+                            <td>
+                                <label for="form-address">Dirección</label>
+                                <br>
+                                <input id="form-address" type="text" placeholder="Ingrese su dirección" required>
+                            </td>
+                            <td>
+                                <label for="form-neighborhood">Barrio</label>
+                                <br>
+                                <input id="form-neighborhood" type="text" placeholder="Ingrese su barrio" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="form-homePhone">Teléfono de residencia</label>
+                                <br>
+                                <input id="form-homePhone" type="number" minlength="7" maxlength="7" placeholder="Ingrese su teléfono de residencia" required>
+                            </td>
+                            <td>
+                                <label for="form-cellPhone">Teléfono celular</label>
+                                <br>
+                                <input id="form-cellPhone" type="number" minlength="10" maxlength="10" placeholder="Ingrese su teléfono" required>
+                            </td>
+                            <td>
+                                <label for="form-email">Correo electrónico</label>
+                                <br>
+                                <input id="form-email" type="email" placeholder="Ingrese su correo" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="submit" form="inscription-form">Enviar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </form>
+            </table>
+        </center>
+    </main>
+</body>
+</html>
