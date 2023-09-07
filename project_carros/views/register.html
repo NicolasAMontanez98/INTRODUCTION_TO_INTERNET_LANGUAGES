@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro clientes</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Acceder</li>
+                <li>Noticias</li>
+            </ul>
+        </nav>
+        <img src="../assets/carro_logo.png" width="10%" alt="logo taller">
+        <h1>Taller Lopez</h1>
+    </header>
+    <main>
+        <sidebar class="menu">
+            <nav>
+                <ul>
+                    <li>Inicio</li>
+                    <li><a href="#">Clientes</a></li>
+                    <li>
+                        Vehiculos
+                        <ul>
+                            <li><a href="#">Automoviles</a></li>
+                            <li><a href="#">Camiones</a></li>
+                            <li><a href="#">Motos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Servicios
+                        <ul>
+                            <li><a href="#">Electrico</a></li>
+                            <li><a href="#">Mecanico</a></li>
+                            <li><a href="#">Estetico</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Usuarios</a></li>
+                </ul>
+            </nav>
+        </sidebar>
+        <div class="contenido">
+            <form action="access.js" width="30%">
+                <label for="id_user">Id</label>
+                <input type="text" name="id_user" id="id_user">
+                <br>
+                <label for="name_user">Nombre</label>
+                <input type="text" name="name_user" id="name_user">
+                <br>
+                <label for="address">Dirección</label>
+                <input type="text" name="address" id="address">
+                <br>
+                <label for="phone">Telefono</label>
+                <input type="number" name="phone" id="phone">
+                <br>
+                <label for="credit">Credito</label>
+                <input type="number" name="credit" id="credit">
+                <br>
+                <button>Agregar</button>
+                <button>Cancel</button>
+            </form>
+        </div>
+        <aside class="login">
+            <h3>Listado de clientes</h3>
+            <table border="1" width="90%">
+                <thead>
+                    <tr>
+                        <th align="center">Id</th>
+                        <th align="center">nombre</th>
+                        <th align="center">Dirección</th>
+                        <th align="center">Teléfono</th>
+                        <th align="center">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="center">xx</td>
+                        <td align="center">AB</td>
+                        <td align="center">Call 1</td>
+                        <td align="center">123123</td>
+                        <td align="center">
+                            <button>Editar</button>
+                            <button>Borrar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">yy</td>
+                        <td align="center">CD</td>
+                        <td align="center">Call 2</td>
+                        <td align="center">342432</td>
+                        <td align="center">
+                            <button>Editar</button>
+                            <button>Borrar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">zz</td>
+                        <td align="center">EF</td>
+                        <td align="center">Call 3</td>
+                        <td align="center">678678</td>
+                        <td align="center">
+                            <button>Editar</button>
+                            <button>Borrar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p><b>Empresa: </b>Taller Lopez</p>
+            <p><b>Dirección: </b>Calle 1 #2-3</p>
+            <p><b>Tel/Cel: </b>333 444 5555</p>
+        </div>
+        <div class="social-media">
+            <a href="#">instagram</a>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
