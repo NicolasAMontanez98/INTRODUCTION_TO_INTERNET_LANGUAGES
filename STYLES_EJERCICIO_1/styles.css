@@ -2,12 +2,25 @@
     width: 100px;
     height: 100px;
     background-color: greenyellow;
-    padding: 50px;
+    padding-bottom: 20px;
+    padding-left: 100px;
     margin: 20px;
+    border-width: 3px;
+    border-style: dotted;
+    border-color: #292929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 100px;
     background-color: cyan;
-    margin: 200px;
+    margin-top: 15px;
+    margin-left: 5em;
+    border: 2px solid #292929;
+    border-radius: 1rem;
 }
