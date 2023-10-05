@@ -7,42 +7,27 @@
     <link href="../styles/styles.css" rel="stylesheet" >
 </head>
 </head>
-<body>
-    <header>
+<body class="flex-column justify-content-start overflow-hidden">
+    <header class="w-100">
         <img src="../assets/tiendaOnline_logo.png" width="150px" alt="Tienda Online">
     </header>
-    <br>
-    <main>
-        <center>
-            <table width="30%" style="background-color: white;">
-                <tr>
-                    <td>
-                        <form action="home.html" method="POST" id="login-form" >
-                            <h2>Iniciar sesión</h2>
-                            <center>
-                                <label for="email">Correo electrónico</label>
-                                <br>
-                                <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
-                                <br>
-                                <br>
-                                <label for="password">Contraseña</label>
-                                <br>
-                                <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña">
-                                <br>
-                                <input type="checkbox" name="show_passwords" id="show_passwords">
-                                <label for="show_passwords">Mostrar contraseña</label>
-                                <br>
-                                <br>
-                                <br>
-                                <button type="submit" form="login-form">Iniciar sesión</button>
-                                <br>
-                                <br>
-                            </center>
-                        </form>
-                    </td>
-                </tr>
-            </table>
-        </center>
+    <main class="w-100 vh-70 all-center">
+        <form class="w-30 bg-white br-1 d-flex flex-column justify-content-start align-items-center shadow border-dark-2 pt-1 pb-3" action="home.html" method="POST" id="login-form" >
+            <h2>Iniciar sesión</h2>
+            <div class="w-80 mb-2">
+                <label class="text-size-sm" for="email">Correo electrónico</label>
+                <input class="custom-input text-size-1 py-xs w-100" type="email" name="email" id="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="w-80 d-flex flex-column align-items-start mb-2">
+                <label class="text-size-sm" for="password">Contraseña</label>
+                <input class="custom-input text-size-1 py-xs mb-xs w-100" type="password" name="password" id="password" placeholder="Ingresa tu contraseña">
+                <div>
+                    <input type="checkbox" name="show_passwords" id="show_passwords">
+                    <label class="text-size-sm" for="show_passwords">Mostrar contraseña</label>
+                </div>
+            </div>
+            <button class="w-80 bg-success br-xs py-xs border-dark-2 text-white text-size-1" type="submit" form="login-form">Iniciar sesión</button>
+        </form>
     </main>
 </body>
 </html>
