@@ -4,159 +4,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="../styles/styles.css" rel="stylesheet" >
 </head>
-<body>
-    <header>
-        <center>
-            <img src="../assets/tiendaOnline_logo.png" width="150px" alt="Tienda Online">
-            <nav>
-                <a href="home.html">Inicio</a> |
-                <a href="categories.html">Categorías</a> |
-                <a href="aboutUs.html">Quienes somos</a> |
-                <a href="contactUs.html">Contacto</a>
-            </nav>
-        </center>
+<body class="flex-column justify-content-start">
+    <header class="w-100 vh-10 mb-1 d-flex justify-content-sb align-items-center">
+        <img src="../assets/tiendaOnline_logo.png" width="150px" alt="Tienda Online">
+        <nav class="d-flex justify-content-center align-items-center gap-1">
+            <a class="custom-button-menu" href="home.html">Inicio</a>
+            <a class="custom-button-menu menu-active">Categorías</a>
+            <a class="custom-button-menu" href="aboutUs.html">Quienes somos</a>
+            <a class="custom-button-menu" href="contactUs.html">Contacto</a>
+        </nav>
+        <div class="w-10 d-flex gap-1">
+            <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+        </div>
     </header>
-    <br>
-    <br>
-    <main>
-        <center>
-            <table width="90%">
-                <tr>
-                    <td width="25%" valign="top">
-                        <form style="background-color: white; border: 0.2rem solid #292929; border-radius: 0.5rem; padding-left: 0.5rem;">
-                            <br>
-                            <h2>Filtrado por</h2>
-                            <input type="text" placeholder="¿Que estás buscando?">
-                            <br>
-                            <button>Filtrar</button>
-                            <br>
-                            <br>
-                            <label for="price">Precio</label>
-                            <br>
-                            <input type="range" id="price" name="price">
-                            <br>
-                            <label for="brand">Marca</label>
-                            <br>
-                            <select id="brand" name="brand">
-                                <option selected disabled>Seleccione una marca</option>
-                                <option value="0">Todos</option>
-                            </select>
-                            <br>
-                            <br>
-                            <label for="brand">Categoría</label>
-                            <br>
-                            <select id="brand" name="brand">
-                                <option selected disabled>Seleccione una categoría</option>
-                                <option value="0">Todos</option>
-                            </select>
-                            <br>
-                            <br>
-                            <input type="checkbox" name="only_discounts" id="only_discounts" required>
-                            <label for="only_discounts">Solo descuentos</label>
-                            <br>
-                            <br>
-                        </form>
-                    </td>
-                    <td width="75%" valign="top">
-                        <table width="100%">
-                            <thead>
-                                <tr>
-                                    <td>Visualización</td>
-                                    <td></td>
-                                    <td align="end">Ordenar por</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <article style="background-color: white; border: 0.2rem solid #292929; border-radius: 0.5rem; padding-left: 0.5rem;">
-                                            <br>
-                                            <img src="../assets/product_1.png" width="200px" alt="Producto">
-                                            <br>
-                                            <a href="#">Producto 1</a>
-                                            <h3>$100.99</h3>
-                                            <button>+</button>
-                                            <button style="background-color: #00BF63;">Comprar</button>
-                                            <br>
-                                            <br>
-                                        </article>
-                                    </td>
-                                    <td>
-                                        <article style="background-color: white; border: 0.2rem solid #292929; border-radius: 0.5rem; padding-left: 0.5rem;">
-                                            <br>
-                                            <img src="../assets/product_2.png" width="200px" alt="Producto">
-                                            <br>
-                                            <a href="#">Producto 2</a>
-                                            <h3>$100.99</h3>
-                                            <button>+</button>
-                                            <button style="background-color: #00BF63;">Comprar</button>
-                                            <br>
-                                            <br>
-                                        </article>
-                                    </td>
-                                    <td>
-                                        <article style="background-color: white; border: 0.2rem solid #292929; border-radius: 0.5rem; padding-left: 0.5rem;">
-                                            <br>
-                                            <img src="../assets/product_3.png" width="200px" alt="Producto">
-                                            <br>
-                                            <a href="#">Producto 3</a>
-                                            <h3>$100.99</h3>
-                                            <button>+</button>
-                                            <button style="background-color: #00BF63;">Comprar</button>
-                                            <br>
-                                            <br>
-                                        </article>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <article style="background-color: white; border: 0.2rem solid #292929; border-radius: 0.5rem; padding-left: 0.5rem;">
-                                            <br>
-                                            <img src="../assets/product_4.png" width="200px" alt="Producto">
-                                            <br>
-                                            <a href="#">Producto 4</a>
-                                            <h3>$100.99</h3>
-                                            <button>+</button>
-                                            <button style="background-color: #00BF63;">Comprar</button>
-                                            <br>
-                                            <br>
-                                        </article>
-                                    </td>
-                                    <td>
-                                        <article style="background-color: white; border: 0.2rem solid #292929; border-radius: 0.5rem; padding-left: 0.5rem;">
-                                            <br>
-                                            <img src="../assets/service_1.png" width="200px" alt="Producto">
-                                            <br>
-                                            <a href="#">Servicio 1</a>
-                                            <h3>$33.99</h3>
-                                            <button>+</button>
-                                            <button style="background-color: #00BF63;">Comprar</button>
-                                            <br>
-                                            <br>
-                                        </article>
-                                    </td>
-                                    <td>
-                                        <article style="background-color: white; border: 0.2rem solid #292929; border-radius: 0.5rem; padding-left: 0.5rem;">
-                                            <br>
-                                            <img src="../assets/service_2.png" width="200px" alt="Producto">
-                                            <br>
-                                            <a href="#">Servicio 2</a>
-                                            <h3>$77.99</h3>
-                                            <button>+</button>
-                                            <button style="background-color: #00BF63;">Comprar</button>
-                                            <br>
-                                            <br>
-                                        </article>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </center>
+    <main class="vh-80 px-1 d-flex justify-content-center align-items-start pr-1 pb-1">
+        <aside class="w-30 h-70">
+            <form class="w-90 bg-white br-1 d-flex flex-column justify-content-center align-items-center shadow border-dark-2 pt-1 pb-3">
+                <h2 class="w-80 text-left">Filtrado por</h2>
+                <div class="w-100 all-center">
+                    <div class="w-80 mb-2 all-center flex-column">
+                        <input class="custom-input text-size-1 py-xs w-100 mb-xs" type="text" placeholder="¿Que estás buscando?">
+                        <button class="w-100 bg-success br-xs py-xs border-dark-2 text-white text-size-1 fw-bold">Filtrar</button>
+                    </div>    
+                </div>
+                <div class="w-100 all-center">
+                    <div class="w-80 mb-2 d-flex justify-content-start flex-column">
+                        <label class="fw-bold" for="price">Precio</label>
+                        <div class="w-100 d-flex justify-content-sb">
+                            <span class="fw-bold text-size-sm">Min. <br>$10.000</span>
+                            <span class="fw-bold text-size-sm text-right">Máx. <br>$15.000.000</span>
+                        </div>
+                        <input type="range" id="price" name="price">
+                    </div>    
+                </div>
+                <div class="w-100 all-center">
+                    <div class="w-80 mb-2 d-flex justify-content-start flex-column">
+                        <label class="fw-bold" for="brand">Marca</label>
+                        <select class="custom-input text-size-1 py-xs w-100 mb-xs" id="brand" name="brand">
+                            <option selected disabled>Seleccione una marca</option>
+                            <option value="0">Todos</option>
+                        </select>
+                    </div>    
+                </div>
+                <div class="w-100 all-center mb-1">
+                    <div class="w-80 d-flex justify-content-start flex-column">
+                        <label class="fw-bold" for="brand">Categoría</label>
+                        <select class="custom-input text-size-1 py-xs w-100 mb-xs" id="brand" name="brand">
+                            <option selected disabled>Seleccione una categoría</option>
+                            <option value="0">Todos</option>
+                        </select>
+                    </div>    
+                </div>
+                <div class="w-100 d-flex justify-content-center align-items-start">
+                    <div class="w-80 d-flex align-items-center">
+                        <input class="custom-check" type="checkbox" name="only_discounts" id="only_discounts" required>
+                        <label class="fw-bold" for="only_discounts">Solo descuentos</label>
+                    </div>
+                </div>
+            </form>
+        </aside>
+        <div class="w-70 h-100 d-flex flex-column justify-content-start align-items-start">
+            <div class="w-100 d-flex justify-content-sb mb-1">
+                <div class="all-center">
+                    <span class="fw-bold mr-1">Visualización</span>
+                    <div>
+                        <i class="fa fa-th-list fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-th fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="all-center">
+                    <span class="fw-bold mr-1">Ordenar por</span>
+                    <div>
+                        <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="products-grid w-100">
+                <article class="w-100 bg-white py-1 br-1 border-dark-2 d-flex flex-column justify-content-center align-items-center">
+                    <img src="../assets/product_1.png" class="w-90" alt="Producto">
+                    <a class="w-90 text-left fw-bold my-1 text-decoration-none text-dark" href="#">Producto 1</a>
+                    <h3 class="text-left fw-bold text-size-base mt-0 mb-1 w-90"><span class="text-success">$</span>100.99</h3>
+                    <div class="w-80 d-flex justify-content-sb align-items-center">
+                        <button class="border-none bg-transparent cursor-pointer"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
+                        <a class="w-80 bg-success all-center br-xs py-xs border-dark-2 text-white text-size-1 fw-bold cursor-pointer">Comprar</a>
+                    </div>
+                </article>
+                <article class="w-100 bg-white py-1 br-1 border-dark-2 d-flex flex-column justify-content-center align-items-center">
+                    <img src="../assets/product_2.png" class="w-90" alt="Producto">
+                    <a class="w-90 text-left fw-bold my-1 text-decoration-none text-dark" href="#">Producto 2</a>
+                    <h3 class="text-left fw-bold text-size-base mt-0 mb-1 w-90"><span class="text-success">$</span>100.99</h3>
+                    <div class="w-80 d-flex justify-content-sb align-items-center">
+                        <button class="border-none bg-transparent cursor-pointer"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
+                        <a class="w-80 bg-success all-center br-xs py-xs border-dark-2 text-white text-size-1 fw-bold cursor-pointer">Comprar</a>
+                    </div>
+                </article>
+                <article class="w-100 bg-white py-1 br-1 border-dark-2 d-flex flex-column justify-content-center align-items-center">
+                    <img src="../assets/product_3.png" class="w-90" alt="Producto">
+                    <a class="w-90 text-left fw-bold my-1 text-decoration-none text-dark" href="#">Producto 3</a>
+                    <h3 class="text-left fw-bold text-size-base mt-0 mb-1 w-90"><span class="text-success">$</span>100.99</h3>
+                    <div class="w-80 d-flex justify-content-sb align-items-center">
+                        <button class="border-none bg-transparent cursor-pointer"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
+                        <a class="w-80 bg-success all-center br-xs py-xs border-dark-2 text-white text-size-1 fw-bold cursor-pointer">Comprar</a>
+                    </div>
+                </article>
+                <article class="w-100 bg-white py-1 br-1 border-dark-2 d-flex flex-column justify-content-center align-items-center">
+                    <img src="../assets/product_1.png" class="w-90" alt="Producto">
+                    <a class="w-90 text-left fw-bold my-1 text-decoration-none text-dark" href="#">Producto 1</a>
+                    <h3 class="text-left fw-bold text-size-base mt-0 mb-1 w-90"><span class="text-success">$</span>100.99</h3>
+                    <div class="w-80 d-flex justify-content-sb align-items-center">
+                        <button class="border-none bg-transparent cursor-pointer"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
+                        <a class="w-80 bg-success all-center br-xs py-xs border-dark-2 text-white text-size-1 fw-bold cursor-pointer">Comprar</a>
+                    </div>
+                </article>
+                <article class="w-100 bg-white py-1 br-1 border-dark-2 d-flex flex-column justify-content-center align-items-center">
+                    <img src="../assets/product_2.png" class="w-90" alt="Producto">
+                    <a class="w-90 text-left fw-bold my-1 text-decoration-none text-dark" href="#">Producto 2</a>
+                    <h3 class="text-left fw-bold text-size-base mt-0 mb-1 w-90"><span class="text-success">$</span>100.99</h3>
+                    <div class="w-80 d-flex justify-content-sb align-items-center">
+                        <button class="border-none bg-transparent cursor-pointer"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
+                        <a class="w-80 bg-success all-center br-xs py-xs border-dark-2 text-white text-size-1 fw-bold cursor-pointer">Comprar</a>
+                    </div>
+                </article>
+                <article class="w-100 bg-white py-1 br-1 border-dark-2 d-flex flex-column justify-content-center align-items-center">
+                    <img src="../assets/product_3.png" class="w-90" alt="Producto">
+                    <a class="w-90 text-left fw-bold my-1 text-decoration-none text-dark" href="#">Producto 3</a>
+                    <h3 class="text-left fw-bold text-size-base mt-0 mb-1 w-90"><span class="text-success">$</span>100.99</h3>
+                    <div class="w-80 d-flex justify-content-sb align-items-center">
+                        <button class="border-none bg-transparent cursor-pointer"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
+                        <a class="w-80 bg-success all-center br-xs py-xs border-dark-2 text-white text-size-1 fw-bold cursor-pointer">Comprar</a>
+                    </div>
+                </article>
+                <article class="w-100 bg-white py-1 br-1 border-dark-2 d-flex flex-column justify-content-center align-items-center">
+                    <img src="../assets/product_4.png" class="w-90" alt="Producto">
+                    <a class="w-90 text-left fw-bold my-1 text-decoration-none text-dark" href="#">Producto 4</a>
+                    <h3 class="text-left fw-bold text-size-base mt-0 mb-1 w-90"><span class="text-success">$</span>100.99</h3>
+                    <div class="w-80 d-flex justify-content-sb align-items-center">
+                        <button class="border-none bg-transparent cursor-pointer"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
+                        <a class="w-80 bg-success all-center br-xs py-xs border-dark-2 text-white text-size-1 fw-bold cursor-pointer">Comprar</a>
+                    </div>
+                </article>
+                <article class="w-100 bg-white py-1 br-1 border-dark-2 d-flex flex-column justify-content-center align-items-center">
+                    <img src="../assets/service_1.png" class="w-90" alt="Producto">
+                    <a class="w-90 text-left fw-bold my-1 text-decoration-none text-dark" href="#">Servicio 1</a>
+                    <h3 class="text-left fw-bold text-size-base mt-0 mb-1 w-90"><span class="text-success">$</span>33.99</h3>
+                    <div class="w-80 d-flex justify-content-sb align-items-center">
+                        <button class="border-none bg-transparent cursor-pointer"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
+                        <a class="w-80 bg-success br-xs py-xs border-dark-2 text-white text-size-1 fw-bold cursor-pointer all-center">Comprar</a>
+                    </div>
+                </article>
+                <article class="w-100 bg-white py-1 br-1 border-dark-2 d-flex flex-column justify-content-center align-items-center">
+                    <img src="../assets/service_2.png" class="w-90" alt="Producto">
+                    <a class="w-90 text-left fw-bold my-1 text-decoration-none text-dark" href="#">Servicio 2</a>
+                    <h3 class="text-left fw-bold text-size-base mt-0 mb-1 w-90"><span class="text-success">$</span>77.99</h3>
+                    <div class="w-80 d-flex justify-content-sb align-items-center">
+                        <button class="border-none bg-transparent cursor-pointer"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
+                        <a class="w-80 bg-success all-center br-xs py-xs border-dark-2 text-white text-size-1 fw-bold cursor-pointer">Comprar</a>
+                    </div>
+                </article>
+            </div>
+            <h2 class="w-100 vh-10 all-center py-3 fw-bold" style="color: #d5a232;">Pronto tendremos más productos ;)</h2>
+        </div>
     </main>
 </body>
 </html>

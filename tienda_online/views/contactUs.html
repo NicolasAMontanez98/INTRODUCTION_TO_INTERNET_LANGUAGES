@@ -4,134 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenid@!!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="../styles/styles.css" rel="stylesheet" >
 </head>
 </head>
-<body>
-    <header>
-        <center>
-            <img src="../assets/tiendaOnline_logo.png" width="150px" alt="Tienda Online">
-            <nav>
-                <a href="home.html">Inicio</a> |
-                <a href="categories.html">Categorías</a> |
-                <a href="aboutUs.html">Quienes somos</a> |
-                <a href="contactUs.html">Contacto</a>
-            </nav>
-        </center>
+<body class="flex-column justify-content-start overflow-hidden">
+    <header class="w-100 d-flex justify-content-sb align-items-center">
+        <img src="../assets/tiendaOnline_logo.png" width="150px" alt="Tienda Online">
+        <nav class="d-flex justify-content-center align-items-center gap-1">
+            <a class="custom-button-menu" href="home.html">Inicio</a>
+            <a class="custom-button-menu" href="categories.html">Categorías</a>
+            <a class="custom-button-menu" href="aboutUs.html">Quienes somos</a>
+            <a class="custom-button-menu menu-active">Contacto</a>
+        </nav>
+        <div class="w-10 d-flex gap-1">
+            <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+        </div>
     </header>
-    <br>
-    <main>
-        <center>
-            <table width="80%">
-                <tr>
-                    <td width="70%">
-                        <table width="100%" style="background-color: white;">
-                            <tr>
-                                <td>
-                                    <form>
-                                        <center>
-                                            <table>
-                                                <tr>
-                                                    <td>
-                                                        <label for="firstname">Nombres</label>
-                                                        <br>
-                                                        <input type="text" name="firstname" id="firstname" placeholder="Nombre" required>
-                                                    </td>
-                                                    <td>
-                                                        <label for="lastname">Apellidos</label>
-                                                        <br>
-                                                        <input type="text" name="lastname" id="lastname" placeholder="Apellido" required>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label for="subject">Asunto</label>
-                                                        <br>
-                                                        <input type="text" name="subject" id="subject" placeholder="Asunto" required>
-                                                    </td>
-                                                    <td>
-                                                        <label for="id">Identificación</label>
-                                                        <br>
-                                                        <input type="number" name="id" id="id" placeholder="Identificación" required>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label for="email">Correo electrónico</label>
-                                                        <br>
-                                                        <input type="email" name="email" id="email" placeholder="Correo electrónico" required>        
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label for="message">Mensaje</label>
-                                                        <br>
-                                                        <textarea name="message" id="message" required></textarea>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <div>
-                                            </div>
-                                            <br>
-                                            <br>
-                                            <button type="submit">enviar</button>
-                                            <br>
-                                            <br>
-                                        </center>
-                                    </form>
-                                </td>
-                                <td>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td width="30%">
-                        <table width="100%" style="background-color: white;">
-                            <tr>
-                                <td>
-                                    <a href="https://www.instagram.com/" target="_blank">
-                                        <img src="../assets/instagram.png" width="50px">
-                                    </a>
-                                </td>
-                                <td><p>@TiendaOnline</p></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="https://www.facebook.com/" target="_blank">
-                                        <img src="../assets/facebook.png" width="50px">
-                                    </a>
-                                </td>
-                                <td><p>TiendaOnline</p></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="https://www.youtube.com/" target="_blank">
-                                        <img src="../assets/youtube.png" width="50px">
-                                    </a>
-                                </td>
-                                <td><p>TiendaOnlineTV</p></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="https://www.linkedin.com/" target="_blank">
-                                        <img src="../assets/linkedin.png" width="50px">
-                                    </a>
-                                </td>
-                                <td><p>TiendaOnline</p></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="https://www.gmail.com/" target="_blank">
-                                        <img src="../assets/gmail.png" width="50px">
-                                    </a>
-                                </td>
-                                <td><p>atencion@TiendaOnline.com</p></td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </center>
+    <main class="w-100 vh-70 all-center gap-1">
+        <form class="w-65 h-80 bg-white br-1 all-center flex-column shadow border-dark-2">
+            <div class="w-80 d-flex gap-1">
+                <div class="w-80 mb-2 d-flex flex-column">
+                    <label class="text-size-sm fw-bold" for="firstname">Nombres</label>
+                    <input class="custom-input text-size-1 py-xs w-100" type="text" name="firstname" id="firstname" placeholder="Nombre" required>
+                </div>    
+                <div class="w-80 mb-2 d-flex flex-column">
+                    <label class="text-size-sm fw-bold" for="lastname">Apellidos</label>
+                    <input class="custom-input text-size-1 py-xs w-100" type="text" name="lastname" id="lastname" placeholder="Apellido" required>
+                </div>    
+            </div>
+
+            <div class="w-80 d-flex gap-1">
+                <div class="w-80 mb-2 d-flex flex-column">
+                    <label class="text-size-sm fw-bold" for="subject">Asunto</label>
+                    <input class="custom-input text-size-1 py-xs w-100" type="text" name="subject" id="subject" placeholder="Asunto" required>
+                </div>    
+                <div class="w-80 mb-2 d-flex flex-column">
+                    <label class="text-size-sm fw-bold" for="id">Identificación</label>
+                    <div class="d-flex">
+                        <select class="custom-input text-size-1 py-xs w-25 br-tr-0 br-br-0 border-right-none">
+                            <option>CC</option>
+                            <option>TI</option>
+                            <option>PA</option>
+                        </select>
+                        <input class="custom-input text-size-1 py-xs w-75 br-tl-0 br-bl-0" type="number" name="id" id="id" min="0" placeholder="Identificación" required>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="w-80 d-flex gap-1">
+                <div class="w-100 mb-2 d-flex flex-column">
+                    <label class="text-size-sm fw-bold" for="email">Correo electrónico</label>
+                    <input class="custom-input text-size-1 py-xs w-100" type="email" name="email" id="email" placeholder="Correo electrónico" required>        
+                </div>    
+            </div>
+        
+            <div class="w-80 d-flex gap-1">
+                <div class="w-100 mb-2 d-flex flex-column">
+                    <label class="text-size-sm fw-bold" for="message">Mensaje</label>
+                    <textarea class="custom-input text-size-1 py-xs w-100" name="message" id="message" style="resize: none;"></textarea>
+                </div>
+            </div>
+
+            <div class="w-80 d-flex justify-content-end">
+                <button class="w-40 bg-success br-xs py-xs border-dark-2 text-white text-size-1 fw-bold" type="submit">Enviar</button>
+            </div>
+        </form>
+        <aside class="w-30 h-80 bg-white br-1 d-flex justify-content-se align-items-start flex-column shadow border-dark-2 pl-1">
+            <div class="d-flex">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="../assets/instagram.png" width="50px">
+                </a>
+                <p class="cursor-default fw-bold ml-xs">@TiendaOnline</p>
+            </div>
+
+            <div class="d-flex">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="../assets/facebook.png" width="50px">
+                </a>
+                <p class="cursor-default fw-bold ml-xs">TiendaOnline</p>
+            </div>
+
+            <div class="d-flex">
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="../assets/youtube.png" width="50px">
+                </a>
+                <p class="cursor-default fw-bold ml-xs">TiendaOnlineTV</p>
+            </div>
+
+            <div class="d-flex">
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="../assets/linkedin.png" width="50px">
+                </a>
+                <p class="cursor-default fw-bold ml-xs">TiendaOnline</p>
+            </div>
+        
+            <div class="d-flex">
+                <a href="https://www.gmail.com/" target="_blank">
+                    <img src="../assets/gmail.png" width="50px">
+                </a>
+                <p class="cursor-default fw-bold ml-xs">atencion@TiendaOnline.com</p>
+            </div>
+        </aside>
+                
     </main>
 </body>
 </html>

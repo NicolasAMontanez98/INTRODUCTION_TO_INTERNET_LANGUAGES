@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenid@!!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="../styles/styles.css" rel="stylesheet" >
 </head>
 </head>
@@ -13,20 +14,20 @@
     </header>
     <main class="w-100 vh-70 all-center">
         <form class="w-30 bg-white br-1 d-flex flex-column justify-content-start align-items-center shadow border-dark-2 pt-1 pb-3" action="home.html" method="POST" id="login-form" >
-            <h2>Iniciar sesión</h2>
+            <h2 class="w-80 text-left">Iniciar sesión</h2>
             <div class="w-80 mb-2">
-                <label class="text-size-sm" for="email">Correo electrónico</label>
+                <label class="text-size-sm fw-bold" for="email">Correo electrónico</label>
                 <input class="custom-input text-size-1 py-xs w-100" type="email" name="email" id="email" placeholder="Correo electrónico" required>
             </div>
             <div class="w-80 d-flex flex-column align-items-start mb-2">
-                <label class="text-size-sm" for="password">Contraseña</label>
+                <label class="text-size-sm fw-bold" for="password">Contraseña</label>
                 <input class="custom-input text-size-1 py-xs mb-xs w-100" type="password" name="password" id="password" placeholder="Ingresa tu contraseña">
-                <div>
-                    <input type="checkbox" name="show_passwords" id="show_passwords">
-                    <label class="text-size-sm" for="show_passwords">Mostrar contraseña</label>
+                <div class="w-100 d-flex justify-content-start align-items-center">
+                    <input class="custom-check" type="checkbox" name="show_passwords" id="show_passwords">
+                    <label class="text-size-sm fw-bold" for="show_passwords">Mostrar contraseña</label>
                 </div>
             </div>
-            <button class="w-80 bg-success br-xs py-xs border-dark-2 text-white text-size-1" type="submit" form="login-form">Iniciar sesión</button>
+            <button class="w-80 bg-success br-xs py-xs border-dark-2 text-white text-size-1 fw-bold" type="submit" form="login-form">Iniciar sesión</button>
         </form>
     </main>
 </body>

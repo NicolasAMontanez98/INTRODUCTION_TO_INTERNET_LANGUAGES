@@ -3,64 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../styles/styles.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../styles/styles.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
-    <header>
-        <center>
-            <img src="../assets/tiendaOnline_logo.png" width="150px" alt="Tienda Online">
-            <nav>
-                <a>Inicio</a> |
-                <a href="categories.html">Categorías</a> |
-                <a href="aboutUs.html">Quienes somos</a> |
-                <a href="contactUs.html">Contacto</a>
-            </nav>
-        </center>
+<body class="flex-column justify-content-start overflow-hidden">
+    <header class="w-100 d-flex justify-content-sb align-items-center">
+        <img src="../assets/tiendaOnline_logo.png" width="150px" alt="Tienda Online">
+        <nav class="d-flex justify-content-center align-items-center gap-1">
+            <a class="custom-button-menu menu-active">Inicio</a>
+            <a class="custom-button-menu" href="categories.html">Categorías</a>
+            <a class="custom-button-menu" href="aboutUs.html">Quienes somos</a>
+            <a class="custom-button-menu" href="contactUs.html">Contacto</a>
+        </nav>
+        <div class="w-10 d-flex gap-1">
+            <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+        </div>
     </header>
-    <br>
-    <main>
-        <center>
-            <table width="80%">
-                <tbody>
-                    <tr>
-                        <td>
-                            <video width="600px" poster="../assets/banner1.png" autoplay controls>
-                                <source src="../assets/compras.mp4" type="video/mp4">
-                                El formato no se puede reproducir
-                            </video>
-                        </td>
-                        <td>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td><img src="../assets/banner1.png" width="300px" alt="Producto"></td>
-                                        <td><img src="../assets/banner1.png" width="300px" alt="Producto"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><img src="../assets/banner1.png" width="300px" alt="Producto"></td>
-                                        <td><img src="../assets/banner1.png" width="300px" alt="Producto"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </center>
-        <br>
-        <center>
-            <table width="90%">
-                <tbody>
-                    <tr>
-                        <td width="25%"><a href="products.html">Tecnología</a></td>
-                        <td width="25%"><a href="products.html">Joyería</a></td>
-                        <td width="25%"><a href="products.html">Ropa mujer</a></td>
-                        <td width="25%"><a href="products.html">Ropa hombre</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </center>
+    <main class="w-100 vh-70 all-center flex-column">
+        <div class="all-center mb-2">
+            <div class="w-50">
+                <video class="br-1" width="97%" poster="../assets/banner1.png" autoplay controls>
+                    <source src="../assets/compras.mp4" type="video/mp4">
+                    El formato no se puede reproducir
+                </video>
+            </div>
+            <div class="w-50 d-flex align-items-start flex-column">
+                <div class="d-flex mb-xs">
+                    <img class="mr-xs" src="../assets/banner1.png" width="45%" alt="Producto">
+                    <img src="../assets/banner1.png" width="45%" alt="Producto">
+                </div>
+                <div class="d-flex">
+                    <img class="mr-xs" src="../assets/banner1.png" width="45%" alt="Producto">
+                    <img src="../assets/banner1.png" width="45%" alt="Producto">
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-sb w-100 gap-1">
+            <a class="custom-button-menu w-20 py-2 text-size-base" href="products.html">Tecnología</a>
+            <a class="custom-button-menu w-20 py-2 text-size-base" href="products.html">Joyería</a>
+            <a class="custom-button-menu w-20 py-2 text-size-base" href="products.html">Ropa mujer</a>
+            <a class="custom-button-menu w-20 py-2 text-size-base" href="products.html">Ropa hombre</a>
+        </div>
     </main>
 </body>
 </html>

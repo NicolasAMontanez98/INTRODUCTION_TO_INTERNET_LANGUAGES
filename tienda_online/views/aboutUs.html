@@ -4,76 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="../styles/styles.css" rel="stylesheet" >
 </head>
-<body>
-    <header>
-        <center>
-            <img src="../assets/tiendaOnline_logo.png" width="150px" alt="Tienda Online">
-            <nav>
-                <a href="home.html">Inicio</a> |
-                <a href="categories.html">Categorías</a> |
-                <a href="aboutUs.html">Quienes somos</a> |
-                <a href="contactUs.html">Contacto</a>
-            </nav>
-        </center>
+<body class="flex-column justify-content-start overflow-hidden">
+    <header class="w-100 d-flex justify-content-sb align-items-center">
+        <img src="../assets/tiendaOnline_logo.png" width="150px" alt="Tienda Online">
+        <nav class="d-flex justify-content-center align-items-center gap-1">
+            <a class="custom-button-menu" href="home.html">Inicio</a>
+            <a class="custom-button-menu" href="categories.html">Categorías</a>
+            <a class="custom-button-menu menu-active">Quienes somos</a>
+            <a class="custom-button-menu" href="contactUs.html">Contacto</a>
+        </nav>
+        <div class="w-10 d-flex gap-1">
+            <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+        </div>
     </header>
-    <br>
-    <main>
-        <center>
-            <table width="80%">
-                <thead>
-                    <tr>
-                        <th><h1 align="start">Somos...</h1></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td width="40%">
-                            <p>
-                                Nostrud velit est nulla cupidatat officia id id proident aliqua do
-                                culpa ullamco. Tempor aliqua aute sint ipsum duis fugiat excepteur
-                                aliqua sunt. Incididunt enim consequat laborum ipsum excepteur non
-                                cupidatat reprehenderit ipsum est. Dolore adipisicing eiusmod aute
-                                sunt reprehenderit adipisicing. Deserunt irure et aliqua commodo
-                                cupidatat in minim ex deserunt ex laboris aliqua occaecat labore.
-                                Nulla sint est exercitation consequat amet ipsum incididunt. Pariatur
-                                incididunt commodo Lorem est ullamco.
-                            </p>
-                        </td>
-                        <td><img src="../assets/banner1.png" width="100%" alt="Tienda Online"></td>
-                        <td><img src="../assets/banner1.png" width="100%" alt="Tienda Online"></td>
-                    </tr>
-                </tbody>
-            </table>
-            <table width="80%">
-                <thead>
-                    <tr>
-                        <th><h1 align="start">Queremos...</h1></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="../assets/banner1.png" width="100%" alt="Tienda Online"></td>
-                        <td width="60%">
-                            <p>
-                                Nostrud velit est nulla cupidatat officia id id proident aliqua do
-                                culpa ullamco. Tempor aliqua aute sint ipsum duis fugiat excepteur
-                                aliqua sunt. Incididunt enim consequat laborum ipsum excepteur non
-                                cupidatat reprehenderit ipsum est. Dolore adipisicing eiusmod aute
-                                sunt reprehenderit adipisicing. Deserunt irure et aliqua commodo
-                                cupidatat in minim ex deserunt ex laboris aliqua occaecat labore.
-                                Nulla sint est exercitation consequat amet ipsum incididunt. Pariatur
-                                incididunt commodo Lorem est ullamco.
-                            </p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </center>
+    <main class="w-100 vh-70 all-center flex-column">
+        <h1 class="w-90 mt-2">Quienes somos</h1>
+        <article class="w-90 d-flex justify-content-start">
+            <div class="w-40 bg-white p-1 br-1 border-dark-1 mr-xs">
+                <p>
+                    Nostrud velit est nulla cupidatat officia id id proident aliqua do
+                    culpa ullamco. Tempor aliqua aute sint ipsum duis fugiat excepteur
+                    aliqua sunt. Incididunt enim consequat laborum ipsum excepteur non
+                    cupidatat reprehenderit ipsum est. Dolore adipisicing eiusmod aute
+                    sunt reprehenderit adipisicing. Deserunt irure et aliqua commodo
+                    cupidatat in minim ex deserunt ex laboris aliqua occaecat labore.
+                    Nulla sint est exercitation consequat amet ipsum incididunt. Pariatur
+                    incididunt commodo Lorem est ullamco.
+                </p>
+            </div>
+            <img class="br-1 mr-xs" src="../assets/banner1.png" width="30%" alt="Tienda Online">
+            <img class="br-1" src="../assets/banner1.png" width="30%" alt="Tienda Online">
+        </article>
+        <article class="w-90 d-flex justify-content-start align-items-center">
+            <img class="mt-2 br-1 mr-xs" src="../assets/banner1.png" width="30%" alt="Tienda Online">
+            <div>
+                <h1 class="w-90">Queremos...</h1>
+                <div class="w-95 bg-white p-1 br-1 border-dark-1 mr-xs">
+                    <p>
+                        Nostrud velit est nulla cupidatat officia id id proident aliqua do
+                        culpa ullamco. Tempor aliqua aute sint ipsum duis fugiat excepteur
+                        aliqua sunt. Incididunt enim consequat laborum ipsum excepteur non
+                        cupidatat reprehenderit ipsum est. Dolore adipisicing eiusmod aute
+                        sunt reprehenderit adipisicing. Deserunt irure et aliqua commodo
+                        cupidatat in minim ex deserunt ex laboris aliqua occaecat labore.
+                        Nulla sint est exercitation consequat amet ipsum incididunt. Pariatur
+                        incididunt commodo Lorem est ullamco.
+                    </p>
+                </div>    
+            </div>
+        </article>
     </main>
-    <br>
-    <footer>
-    </footer>
 </body>
 </html>
