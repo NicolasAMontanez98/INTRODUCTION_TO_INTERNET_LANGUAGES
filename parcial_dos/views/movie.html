@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100&display=swap" rel="stylesheet">
+    <link href="../styles/styles.css" rel="stylesheet">
+    <title>Bienvenid@</title>
+</head>
+<body id="body-movie" class="vw-100 blur d-flex flex-column justify-content-start align-items-center">
+    <nav class="w-100 d-flex justify-content-sb align-items-start pt-2">
+        <a href="../index.html">
+            <img class="ml-2" width="150px" src="../assets/logoRYM.png">
+        </a>
+        <div class="d-flex justify-content-start">
+            <a class="br-xs border-dark-2 all-center cursor-pointer fw-bold text-size-1 text-decoration-none bg-white text-dark" href="../index.html"
+                style="width: 136px; height: 50px;" title="ver catalogo">
+                Inicio
+            </a>
+            <a class="br-xs border-dark-2 all-center cursor-pointer fw-bold text-size-1 text-decoration-none bg-white text-dark" href="movies.html"
+                style="width: 136px; height: 50px;" title="ver catalogo">
+                Catalogo
+            </a>
+            <a class="br-xs border-dark-2 cursor-pointer all-center fw-bold text-size-1 text-decoration-none bg-white text-dark mr-2" href="categories.html"
+                style="width: 136px; height: 50px;" title="ver categorias">
+                Categorías
+            </a>
+        </div>
+    </nav>
+    <main class="w-80 d-flex flex-column overflow-y-scroll pr-1">
+        <div id="info-movie" class="all-center pl-1 pb-2" style="background-color: rgba(0,0,0,.7);">
+            <img id="movie-poster">
+            <div class="h-100 pl-2 d-flex flex-column justify-content-start align-items-start">
+                <h1 id="movie-title" class="text-white text-size-3"></h1>
+                <ul id="genres" class="d-flex list-style-none gap-1 pl-0 m-0"></ul>
+                <p id="movie-overview" class="text-white"></p>
+                <ul id="general-info" class="d-flex flex-column list-style-none gap-1 pl-0 m-0">
+                    <li class="text-white d-flex align-items-center">
+                        <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+                        <p class="pl-1 m-0"><b>Fecha de lanzamiento:</b> <span id="release_date"></span></p>
+                    </li>
+                    <li class="text-white d-flex align-items-center">
+                        <i class="fa fa-clock fa-2x" aria-hidden="true"></i>
+                        <p class="pl-1 m-0"><b>Duración:</b> <span id="duration"></span></p>
+                    </li>
+                    <li class="text-white d-flex align-items-center">
+                        <i class="fa fa-money-bill fa-2x" aria-hidden="true"></i>
+                        <p class="pl-1 m-0"><b>Presupuesto:</b> <span id="budget"></span></p>
+                    </li>
+                    <li class="text-warning d-flex align-items-center">
+                        <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+                        <h2 class="pl-1 m-0 fw-bold" id="vote_average"></h2>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-100 d-flex justify-content-sb">
+            <h2 class="text-white">
+                Reseñas
+            </h2>
+        </div>
+        <div class="all-center pb-3">
+            <span id="prev_review" class="text-warning h-100 all-center cursor-pointer">
+                <i class="fa fa-caret-left fa-5x" aria-hidden="true"></i>
+            </span>
+            <div class="all-center flex-column w-90" id="reviews"></div>
+            <span id="next_review" class="text-warning h-100 all-center cursor-pointer">
+                <i class="fa fa-caret-right fa-5x" aria-hidden="true"></i>
+            </span>
+        </div>
+        <div class="w-100 d-flex justify-content-sb">
+            <h2 class="text-white">
+                Cast
+            </h2>
+            <div class="d-flex align-items-center">
+                <input type="checkbox" title="ver todo" id="see_all_cast">
+                <p class="text-white cursor-default">Ver todo</p>
+            </div>
+        </div>
+        <div class="cast-grid pb-3" id="cast"></div>
+        <div class="w-100 d-flex justify-content-sb">
+            <h2 class="text-white">Recomendaciones</h2>
+            <div class="d-flex align-items-center">
+                <input type="checkbox" title="ver todo" id="see_all_recomendations">
+                <p class="text-white cursor-default">Ver todo</p>
+            </div>
+        </div>
+        <div class="cast-grid pb-3" id="recomendations"></div>
+        <div class="w-100 d-flex justify-content-sb">
+            <h2 class="text-white">Comentarios</h2>
+        </div>
+        <div class="all-center flex-column pb-3" id="comments">
+            <textarea placeholder="Escribe un comentario..." class="w-90 border-dark-2 br-1 px-1 pt-1 text-size-1" style="min-height: 150px;" id="new_comment"></textarea>
+            <div class="w-90 d-flex justify-content-end pl-2">
+                <button class="fw-bold bg-warning br-xs px-2 py-xs cursor-pointer text-size-1 mt-xs" onclick="comentar()">Comentar</button>
+            </div>
+            <div class="w-90 all-center flex-column pl-2 mt-2" id="comments_box"></div>
+        </div>
+    </main>
+    <script src="../js/getMovie.js"></script>
+</body>
+</html>

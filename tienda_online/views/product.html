@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../styles/styles.css" rel="stylesheet" >
+</head>
+<body class="flex-column justify-content-start">
+    <header class="w-100 vh-10 my-2 d-flex justify-content-sb align-items-center">
+        <img src="../assets/tiendaOnline_logo.png" width="150px" alt="Tienda Online">
+        <nav class="d-flex justify-content-center align-items-center gap-1">
+            <a class="custom-button-menu" href="home.html">Inicio</a>
+            <a class="custom-button-menu menu-active">Categorías</a>
+            <a class="custom-button-menu" href="aboutUs.html">Quienes somos</a>
+            <a class="custom-button-menu" href="contactUs.html">Contacto</a>
+        </nav>
+        <div class="w-10 d-flex gap-1">
+            <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+        </div>
+    </header>
+    <main class="w-90 vh-80 mt-1 mb-2 px-1 d-flex flex-column justify-content-start align-items-center pb-1">
+        <div class="w-100 d-flex justify-content-start align-items-center">
+            <a class="px-5 py-2 bg-danger br-xs py-xs border-dark-2 text-white text-size-3-2 fw-bold text-decoration-none" href="products.html">Volver</a>
+        </div>
+        <hr class="w-100 my-2 border-dark-2">
+        <h1 class="w-100 text-left mt-1">Computador de escritorio</h1>
+        <div class="w-100 d-flex mb-3">
+            <div class="w-70 d-flex bg-white br-2 border-dark-2 py-2 vh-45">
+                <div class="w-20 d-flex flex-column gap-1 pl-1 overflow-y-scroll">
+                    <img src="../assets/product_3.png" class="w-90">
+                    <img src="../assets/product_4.png" class="w-90">
+                    <img src="../assets/product_3.png" class="w-90">
+                    <img src="../assets/product_3.png" class="w-90">
+                    <img src="../assets/product_4.png" class="w-90">
+                    <img src="../assets/product_3.png" class="w-90">
+                </div>
+                <div class="w-80 all-center">
+                    <img src="../assets/product_1.png" class="w-90">
+                </div>
+            </div>
+            <div class="w-30">
+                <h2 class="text-left fw-bold text-size-4 mt-0 mb-1 w-90 ml-2"><span class="text-success text-border-success text-border-2">$</span>100.99</h2>
+                <div class="w-90 all-center" style="height: 70px;">
+                    <button class="border-dark-3 bg-white ml-2 w-20 h-100 border-right-none br-tl-1 br-bl-1">
+                        <i class="fa fa-minus fa-2x" aria-hidden="true"></i>
+                    </button>
+                    <div class="w-60 h-100 all-center bg-white text-size-2 fw-bold" style="outline: 3px solid #131212; outline-offset: -3px;">1</div>
+                    <button class="border-dark-3 bg-white w-20 h-100 border-left-none br-tr-1 br-br-1">
+                        <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <button class="border-dark-3 bg-white w-90 br-1 ml-2 mt-1 py-1-2 d-flex align-items-center justify-content-sa">
+                    <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
+                    <span class="text-size-3-2">Agregar al carrito</span>
+                </button>
+                <button class="border-dark-3 bg-success w-90 br-1 ml-2 mt-1 py-1 d-flex align-items-center justify-content-sa">
+                    <span class="text-size-3-2">Comprar</span>
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

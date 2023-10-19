@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100&display=swap" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+    <title>Bienvenid@</title>
+</head>
+
+<body class="blur">
+    <main class="vw-90 vh-90 all-center flex-column">
+        <img class="vh-30" src="assets/logoRYM.png">
+        <div class="all-center">
+            <input id="searchMovie" class="custom-input text-center text-size-base" style="width: 400px; height: 64px;" type="text" placeholder="Escribe el nombre de una pelicula">
+            <button id="searchButton" onclick="search()" class="br-xs border-dark-2 cursor-pointer bg-white all-center" type="button" style="width: 100px; height: 70px;">
+                <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="w-100 d-flex justify-content-start">
+            <a class="w-50 br-xs border-dark-2 cursor-pointer bg-white all-center text-decoration-none text-dark"
+                href="views/movies.html" style="height: 70px;" title="ver catalogo">
+                <i class="fa fa-film fa-2x" aria-hidden="true"></i>
+            </a>
+            <a class="w-50 br-xs border-dark-2 cursor-pointer bg-white all-center text-decoration-none text-dark"
+                href="views/categories.html" style="height: 70px;" title="ver categorias">
+                <i class="fa fa-th fa-2x" aria-hidden="true"></i>
+            </a>
+        </div>
+    </main>
+    <script>
+        function search() {
+            location.href = `views/movies.html?query=${document.getElementById('searchMovie').value}`
+        }
+    </script>
+</body>
+</html>

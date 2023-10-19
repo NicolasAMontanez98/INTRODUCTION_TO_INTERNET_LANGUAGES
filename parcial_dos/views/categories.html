@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100&display=swap" rel="stylesheet">
+    <link href="../styles/styles.css" rel="stylesheet">
+    <title>Bienvenid@</title>
+</head>
+
+<body class="vh-100 vw-100 blur d-flex flex-column justify-content-start align-items-start">
+    <nav class="w-100 d-flex justify-content-sb align-items-start pt-2">
+        <a href="../index.html">
+            <img class="ml-2" width="150px" src="../assets/logoRYM.png">
+        </a>
+        <div class="d-flex justify-content-start">
+            <a class="br-xs border-dark-2 all-center cursor-pointer fw-bold text-size-1 text-decoration-none bg-white text-dark" href="../index.html"
+                style="width: 136px; height: 50px;" title="ver catalogo">
+                Inicio
+            </a>
+            <a class="br-xs border-dark-2 all-center cursor-pointer fw-bold text-size-1 text-decoration-none bg-white text-dark" href="movies.html"
+                style="width: 136px; height: 50px;" title="ver catalogo">
+                Catalogo
+            </a>
+            <a class="br-xs border-dark-2 cursor-pointer all-center fw-bold text-size-1 text-decoration-none bg-white text-dark mr-2"
+                style="width: 136px; height: 50px;" title="ver categorias">
+                Categorías
+            </a>
+        </div>
+    </nav>
+    <header class="w-100 all-center">
+        <h1 class="text-white text-size-3 mt-0 mb-1">Categorías</h1>
+    </header>
+    <main class="w-100 d-flex flex-column justify-content-start align-items-center overflow-y-scroll">
+        <div class="w-90 general-grid pb-3" id="categories"></div>
+    </main>
+    <script src="../js/getCategories.js"></script>
+</body>
+
+</html>
